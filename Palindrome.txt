@@ -1,0 +1,36 @@
+import java.util.*;
+class Palindrome
+{
+	public static void main(String args[])
+	{
+		int n,i,num,reversed=0;
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("Enter the number:");
+		n = sc.nextInt();
+		int orgnum=n;
+		
+		while(n!=0)
+		{
+			num=n%10;
+			reversed=reversed*10+num;
+			n/=10;
+			
+		}
+		if(reversed==orgnum)
+		{
+			System.out.println("Number is palindrome");
+		}
+		else
+		{
+			System.out.println("Number is not palindrome");
+		}
+		
+    }
+}
+
+
+/*OUTPUT
+Enter the number:
+1221
+Number is palindrome*/

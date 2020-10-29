@@ -1,0 +1,40 @@
+import java.util.*;
+class Fibo
+{
+	public static void main(String args[])
+	{
+		int n ,i,first=0,second=1,fibo;
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Fibonacci series upto how many terms required:");
+		 n = sc.nextInt();
+		if(n==1)
+		{
+			System.out.println("first fibonacci term is:"+n);
+		}
+		
+		else
+		{  
+			System.out.println("First"+" "+n+" "+"Fibonacci numbers are:");
+			System.out.println("1");
+			for(i=1;i<n;i++)
+			{  
+				fibo=second+first;
+               System.out.println(fibo);
+               first=second;
+               second=fibo;
+
+        }
+
+		}
+
+	}
+}
+
+/*OUTPUT
+Fibonacci series upto how many terms required:
+4
+First 4 Fibonacci numbers are:
+1
+1
+2
+3*/

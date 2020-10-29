@@ -1,0 +1,24 @@
+import java.util.*;
+class Sumn
+{
+	public static void main(String args[])
+	{
+		int i,n,sum=0;
+		Scanner sc =new Scanner(System.in);
+		System.out.println("sum upto which number needed:");
+		n =sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+			sum+=i;
+		}
+		System.out.println("sum of first"+" "+ + n +" natural numbers is :"+sum);
+	}
+
+}
+
+/*OUTPUT
+sum upto which number needed:
+6
+sum of first 6 natural numbers is :21*/
+
+

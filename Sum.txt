@@ -1,0 +1,18 @@
+public class Sum
+{
+	public static void main(String[] args) {
+		int a=56,b=78;
+		System.out.println("Sum is :"+(a+b));
+	}
+
+
+}
+
+
+
+//Output
+
+//Sum is :134
+
+
+
