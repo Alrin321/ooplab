@@ -45,7 +45,7 @@ class Queue{
 
 	        void  enqueue(int item){
 	 
-	     if((front==0)&&(rear==size-1))
+	     if((rear==size-1))
 	    {
 	        System.out.println("full,cannot be inserted");
 	    }
